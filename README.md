@@ -2,13 +2,15 @@
 This page contains details about Collab VM, what it is, the links to the source code, how to host it, the requirements for hosting it, and other things.
 
 # Where is the source code?
-The "collab-vm source code" is ambiguous as there are multiple components to the site that are open source. Collab VM is mostly open source; but there are still a few closed source components (the Collab VM Agent, for example.) Closed source components, however, are not included by default and are not necessary for operation. The rest of the components are fully open source. 
+The "collab-vm source code" is ambiguous as there are multiple components to the site that are open source. Collab VM is fully open source; all components you see on the website are open source. 
 
 * [collab-vm-server](https://github.com/computernewb/collab-vm-server) - This is basically the "heart" of collab-vm: It handles pretty much everything. This will allow you to host your own collab-vm mirror or host a VM for another person if you want to. You can either compile it yourself or use the pre-made binaries.
 
 * [collab-vm-web-app](https://github.com/computernewb/collab-vm-web-app) - This contains the source to the web backend, which includes the Javascript and HTML. This will allow you to either compile the default web backend, or you can customize the theme or the Javascript if you want to.
 
 * [collab-vm-admin-web-app](https://github.com/computernewb/collab-vm-admin-web-app) - This contains the source to the admin panel web backend, which includes the Javascript and HTML. This will allow you to customize the administrator panel to your liking. You can customize the theme, Javascript, etc (very similar to the collab-vm-web-app and compiled in the same way.)
+
+* [collab-vm-agent](https://github.com/computernewb/collab-vm-agent) - This contains the source to the Collab VM Agent and the Collab VM Agent Loader, which powers the Virus Farm. 
 
 # Requirements for hosting
 * You need a Linux machine, preferrably one running Ubuntu 14.04 or higher (although not necessarily required). You can also compile and run this on Windows (requiring Windows Vista SP2 and up), although the Windows version is unstable and not very functional at this time (although in the future much better Windows support is planned). There is currently no Mac OS version (mainly because I don't have a Mac) but you can at least compile and run it on a Mac (tested on OS X Yosemite 10.10).
